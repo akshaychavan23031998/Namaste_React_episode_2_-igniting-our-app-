@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Namaste React</title>
+        <link rel="stylesheet" href="App.css">
+    </head>
+    <body>
+        <div id="root">
+        <!-- (1) how we can display hello world using only html ?? 
+            <h1>Hello World</h1>    -->
+        </div>
+        
+        <!-- (2) how we can do that using only javascript ?? and how the above code will look like 
+                for that we need to create a script tag        
+            <script>
+                const heading = document.createElement("h1");
+                // console.log(h1);
+                heading.innerHTML = "Hellow World From Javascript";
+                const root = document.getElementById("root");
+                root.appendChild(heading);
+            </script>
+        -->
+        <!-- (3) Now how we can display hello world using React JS ?? 
+        so we have 2 React script files, react & react dom, react file which contains the complete core react code and,
+        react dom has react dom releted code, but why 2 files ?? bcz react used in many places like web apps we use react,
+        for mobile apps we use React Native so that -->
+        
+        <!-- As we installed the Recat and Recat DOM we no longer will need this CDN, so removed both CDN's -->
+
+        <!-- code for above point (3) ==>> <script>
+            const heading = React.createElement("h1",{},"Hello World from React JS");
+            const root = ReactDOM.createRoot(document.getElementById("root"));
+            root.render(heading);
+        </script> -->
+        <!-- writing the JS code inside the script tag becomes very clumsy and not readable so we can seperate this code in js file. -->
+        <script src="App.js" type="module"></script>
+    </body>
+</html>
